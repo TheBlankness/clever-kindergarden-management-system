@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/montserrat-font.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<style>
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + .label34 {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #4835D4;
+    display: inline-block;
+}
+
+.inputfile:focus + .label34,
+.inputfile + .label34:hover {
+    background-color: #FFFFFF;
+		color: black;
+}
+</style>
+
+<body class="form-v10">
+	<div class="page-content">
+		<div class="form-v10-content">
+			<form class="form-detail" action="upload.php" method="post" id="myform" enctype="multipart/form-data">
+				<div class="form-left">
+
+					<h2>Parent Infomation</h2>
+
+					<div class="form-row">
+					<input type="text" name="full_name" id="full_name" class="input-text" placeholder="Full Name" required>
+				</div>
+
+					<div class="form-row">
+					<input type="text" name="username" id="username" class="input-text" placeholder="Username" required>
+				</div>
+
+				<div class="form-row">
+				<input type="password" name="password" id="password" class="input-text" placeholder="Password" required>
+			</div>
+
+			<div class="form-row">
+			<input type="email" name="email" id="email" class="input-text" placeholder="Email" required>
+		</div>
+
+		<div class="form-row">
+				<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
+		</div>
+
+
+					<h2>Payment</h2>
+
+
+				<div class="form-row">
+					<p>Please Attach your proof of payment to account:</p>
+					<p><b>Maybank: 162385109744</b></p>
+					    <input type="file" name="fileToUpload" id="fileToUpload" class="inputfile">
+							<label for="fileToUpload" class="label34 w3-button w3-border w3-round-xxlarge" style="width:50%">Choose a file</label>
+								</div>
+
+
+
+
+		<h2>  </h2>
+
+				</div>
+
+				<div class="form-right">
+
+					<h2>Child Information</h2>
+
+					<div class="form-row">
+					<input type="text" name="child_full_name" id="child_full_name" class="input-text" placeholder="Fulll name" required>
+				</div>
+
+				<div class="form-row">
+				<input type="number" name="age" id="age" class="input-text" placeholder="Age" required>
+			</div>
+
+			<div class="form-row">
+			<input type="text" name="address" id="address" class="input-text" placeholder="Address" required>
+		</div>
+
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="City" class="City" id="City" placeholder="City" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<select name="state">
+							<option value="" disabled selected>State</option>
+								<option value="Wilayah Persekutuan">Wilayah Persekutuan</option>
+								<option value="Johor">Johor</option>
+						    <option value="Kedah">Kedah</option>
+						    <option value="Kelantan">Kelantan</option>
+						    <option value="Pahang">Pahang</option>
+								<option value="Negeri Sembilan">Negeri Sembilan</option>
+								<option value="Perak">Perak</option>
+								<option value="Perlis">Perlis</option>
+								<option value="Penang">Penang</option>
+								<option value="Sabah">Sabah</option>
+								<option value="Sarawak">Sarawak</option>
+								<option value="Selangor">Selangor</option>
+								<option value="Terrenganu">Terrenganu</option>
+								<option value="Malacca">Malacca</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+
+					<div class="form-row">
+						<select name="option" required>
+							<option value="" disabled selected>Plans</option>
+								<option value="Basic"  >Basic</option>
+								<option value="Islamic">Islamic+</option>
+								<option value="Language">Language++</option>
+						</select>
+						<span class="select-btn">
+						  	<i class="zmdi zmdi-chevron-down"></i>
+						</span>
+					</div>
+
+<br>
+
+				<div class="form-checkbox">
+					<label class="container"><p>I do accept the <a href="https://policies.google.com/terms" class="text">Terms and Conditions</a> of your site.</p>
+							<input type="checkbox" name="checkbox">
+							<span class="checkmark"></span>
+					</label>
+				</div>
+
+					<div class="form-row-last">
+						<input type="submit" name="register" class="register" value="Register">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
